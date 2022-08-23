@@ -40,8 +40,7 @@
             </div>
 
             <button
-              id="addto-list"
-              class="ml-[20px] bg-sky-800 px-[70px] py-1 text-white"
+              class="ml-[20px] bg-sky-800 px-[70px] py-1 text-white playerCardButton"
             >
               SELECT
             </button>
@@ -54,7 +53,9 @@
               <span class="text-slate-300">120 Assist</span>
             </div>
 
-            <button class="ml-[20px] bg-sky-800 px-[70px] py-1 text-white">
+            <button
+              class="ml-[20px] bg-sky-800 px-[70px] py-1 text-white playerCardButton"
+            >
               SELECT
             </button>
           </div>
@@ -66,50 +67,63 @@
               <span class="text-slate-300">120 Assist</span>
             </div>
 
-            <button class="ml-[20px] bg-sky-800 px-[70px] py-1 text-white">
+            <button
+              class="ml-[20px] bg-sky-800 px-[70px] py-1 text-white playerCardButton"
+            >
               SELECT
             </button>
           </div>
 
           <div
             id="selection"
-            class="w-[264px] h-[300px] space-y-3 bg-black pt-[30px]mb-[30px] text-center"
+            class="w-[264px] h-[300px] overflow-hidden space-y-3 bg-black pt-[30px]mb-[30px] text-center"
           >
-            <h2 class="text-white">Selected Players</h2>
+            <h2 class="text-white py-[15px]">Selected Players</h2>
+            <hr class="border-orange-300 w-full border-2" />
+            <ul
+              id="selected-Players"
+              class="w-full flex flex-col mt-5 gap-[22px] justify-between text-white"
+            ></ul>
           </div>
           <div class="w-[234px] h-[300px] space-y-3 bg-black mb-[30px]">
             <img src="imagesfolder/Rectangle vitor.png" alt="" />
             <div class="text-center justify center">
-              <h5 class="text-white">Lionel Messi</h5>
+              <h5 class="text-white">Vitor</h5>
               <span class="text-slate-300">36 Goals</span>
               <span class="text-slate-300">120 Assist</span>
             </div>
 
-            <button class="ml-[20px] bg-sky-800 px-[70px] py-1 text-white">
+            <button
+              class="ml-[20px] bg-sky-800 px-[70px] py-1 text-white playerCardButton"
+            >
               SELECT
             </button>
           </div>
           <div class="w-[234px] h-[300px] space-y-3 bg-black mb-[30px]">
             <img src="imagesfolder/RectangleRamos.png" alt="" />
             <div class="text-center justify center">
-              <h5 class="text-white">Lionel Messi</h5>
+              <h5 class="text-white">Ramos</h5>
               <span class="text-slate-300">36 Goals</span>
               <span class="text-slate-300">120 Assist</span>
             </div>
 
-            <button class="ml-[20px] bg-sky-800 px-[70px] py-1 text-white">
+            <button
+              class="ml-[20px] bg-sky-800 px-[70px] py-1 text-white playerCardButton"
+            >
               SELECT
             </button>
           </div>
           <div class="w-[234px] h-[300px] space-y-3 bg-black mb-[30px]">
             <img src="imagesfolder/Rectangle renoto.png" alt="" />
             <div class="text-center justify center">
-              <h5 class="text-white">Lionel Messi</h5>
+              <h5 class="text-white">Renoto</h5>
               <span class="text-slate-300">36 Goals</span>
               <span class="text-slate-300">120 Assist</span>
             </div>
 
-            <button class="ml-[20px] bg-sky-800 px-[70px] py-1 text-white">
+            <button
+              class="ml-[20px] bg-sky-800 px-[70px] py-1 text-white playerCardButton"
+            >
               SELECT
             </button>
           </div>
@@ -119,30 +133,43 @@
             <h2 class="text-white">Budget</h2>
             <div class="px-[20px] space-y-3">
               <span class="text-slate-300"
-                >Per Player <input type="text" class="w-[100px]"
+                >Per Player
+                <input
+                  id="perPlayerValue"
+                  placeholder="enter a value"
+                  type="text"
+                  class="w-[100px] text-black"
               /></span>
-              <button class="bg-sky-800 px-[70px] py-1 text-white">
+              <button
+                id="player-Calculaiton"
+                class="bg-sky-800 px-[70px] py-1 text-white"
+              >
                 Calculate
               </button>
             </div>
             <div>
               <h4 class="text-slate-300">
-                Player Expenses <span>$</span><span>0000</span>
+                Player Expenses <span>$</span
+                ><span id="player-Expenses">0000</span>
               </h4>
             </div>
             <div class="px-[20px] space-y-6">
               <span class="text-slate-300 px-[15px]"
-                >Manager <input type="text" class="w-[100px] mb-[10px]"
+                >Manager
+                <input
+                  id="managerInput"
+                  type="text"
+                  class="w-[100px] mb-[10px]"
               /></span>
               <span class="text-slate-300 ml-[15px]"
-                >Coach <input type="text" class="w-[100px]"
+                >Coach <input id="coachInput" type="text" class="w-[100px]"
               /></span>
               <button class="bg-sky-800 px-[70px] py-1 text-white">
                 Calculate Total
               </button>
               <div>
                 <h4 class="text-slate-300">
-                  Player Expenses <span>$</span><span>0000</span>
+                  Total <span>$</span><span id="totalExpense">0000</span>
                 </h4>
               </div>
             </div>
