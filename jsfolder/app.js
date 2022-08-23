@@ -1,28 +1,3 @@
-// // function addtoCart(element) {
-// //   const selectedNames = element.parentNode.children[1].children[0].innerText;
-// //   const selection = document.getElementById("selection");
-
-// //   const li = document.createElement("li");
-
-// //   li.innerText = selectedNames;
-// //   li.style.color = "white";
-
-// //   selection.appendChild(li);
-// //}
-
-// const playerArray = [];
-// function listNames(matchPlayer) {
-//   console.log(playerArray);
-// }
-// function addtoCart(element) {
-//   const selectedNames = element.parentNode.children[1].children[0].innerText;
-
-//   const playerList = {
-//     playerName: selectedNames,
-//   };
-//   playerArray.push(playerList);
-//   listNames(playerArray);
-// }
 const playerCardBtn = document.querySelectorAll(".playerCardButton");
 const selectePlayers = document.getElementById("selected-Players");
 const playerCalculation = document.getElementById("player-Calculaiton");
