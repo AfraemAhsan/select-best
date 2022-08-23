@@ -66,3 +66,32 @@ for (const cardbutton of playerCardBtn) {
     }
   });
 }
+
+playerCalculation.addEventListener("click", function (event) {
+  const playerValue = document.getElementById("perPlayerValue").value;
+  const valueInt = parseInt(playerValue);
+  const totalPlayer = document.querySelectorAll(".selectedPlayer").length;
+
+  if (totalPlayer === 0) {
+    alert("select at least one player");
+  } else if (Number.isNaN(valueInt)) {
+    alert("please enter only number");
+  } else {
+    const playerExpensive = totalPlayer * valueInt;
+    playerExpenses.innerText = playerExpensive;
+  }
+});
+
+function calculateTotal(params) {
+  const managerInput = document.getElementById("managerInput").value;
+  const intValue = parseInt(managerInput);
+  const coachInput = document.getElementById("coachInput").value;
+  const intValueCoach = parseInt(coachInput);
+  if (Number.isNaN(intValue) && Number.isNaN(intValueCoach)) {
+    alert("give  valid number only");
+  } else {
+    const temporaryExpense = playerExpenses.innerText;
+    const finalExpense = parseInt(temporaryExpense) + intValue + intValueCoach;
+    document.getElementById("total-Expense").innerText = finalExpense;
+  }
+}

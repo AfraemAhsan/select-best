@@ -159,17 +159,22 @@
                 <input
                   id="managerInput"
                   type="text"
-                  class="w-[100px] mb-[10px]"
+                  class="w-[100px] mb-[10px] text-black"
               /></span>
               <span class="text-slate-300 ml-[15px]"
-                >Coach <input id="coachInput" type="text" class="w-[100px]"
+                >Coach
+                <input id="coachInput" type="text" class="w-[100px] text-black"
               /></span>
-              <button class="bg-sky-800 px-[70px] py-1 text-white">
+              <button
+                onclick="calculateTotal()"
+                class="bg-sky-800 px-[70px] py-1 text-white"
+              >
                 Calculate Total
               </button>
               <div>
                 <h4 class="text-slate-300">
-                  Total <span>$</span><span id="totalExpense">0000</span>
+                  Total <span>$</span
+                  ><span id="total-Expense" class="text-red">0000</span>
                 </h4>
               </div>
             </div>
