@@ -34,12 +34,15 @@
           <div class="w-[234px] h-[300px] space-y-3 bg-black mb-[30px]">
             <img src="imagesfolder/Rectangle messi.png" alt="" />
             <div class="text-center justify center">
-              <h5 class="text-white">Lionel Messi</h5>
+              <h5 id="player-name" class="text-white">Lionel Messi</h5>
               <span class="text-slate-300">36 Goals</span>
               <span class="text-slate-300">120 Assist</span>
             </div>
 
-            <button class="ml-[20px] bg-sky-800 px-[70px] py-1 text-white">
+            <button
+              id="addto-list"
+              class="ml-[20px] bg-sky-800 px-[70px] py-1 text-white"
+            >
               SELECT
             </button>
           </div>
@@ -69,10 +72,10 @@
           </div>
 
           <div
+            id="selection"
             class="w-[264px] h-[300px] space-y-3 bg-black pt-[30px]mb-[30px] text-center"
           >
             <h2 class="text-white">Selected Players</h2>
-            <div></div>
           </div>
           <div class="w-[234px] h-[300px] space-y-3 bg-black mb-[30px]">
             <img src="imagesfolder/Rectangle vitor.png" alt="" />
@@ -153,5 +156,6 @@
         </h3>
       </footer>
     </main>
+    <script src="jsfolder/app.js"></script>
   </body>
 </html>
