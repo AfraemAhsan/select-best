@@ -1,21 +1,3 @@
-// // const buttonName = document.getElementById("addto-list");
-
-// // this.addEventListener("click", function () {
-// //   const playerName = document.getElementById("player-name");
-// //   const playerInfo = playerName.innerText;
-// //   console.log(playerInfo);
-// //   const selecTion = document.getElementById("selection");
-// //   const ol = document.createElement("ol");
-// //   const olshow = selecTion.appendChild(ol);
-// //   ol.style.color = "white";
-// //   const li = document.createElement("li");
-// //   const liShow = ol.appendChild(li);
-// //   li.style.color = "white";
-// //   liShow.innerText = playerInfo;
-// //   buttonName.setAttribute("disabled", "");
-// //   buttonName.style.backgroundColor = "gray";
-// // });
-
 // // function addtoCart(element) {
 // //   const selectedNames = element.parentNode.children[1].children[0].innerText;
 // //   const selection = document.getElementById("selection");
@@ -87,7 +69,7 @@ function calculateTotal(params) {
   const intValue = parseInt(managerInput);
   const coachInput = document.getElementById("coachInput").value;
   const intValueCoach = parseInt(coachInput);
-  if (Number.isNaN(intValue) && Number.isNaN(intValueCoach)) {
+  if (Number.isNaN(intValue) || Number.isNaN(intValueCoach)) {
     alert("give  valid number only");
   } else {
     const temporaryExpense = playerExpenses.innerText;
